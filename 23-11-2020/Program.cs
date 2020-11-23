@@ -25,6 +25,7 @@ namespace _23_11_2020
             
             Display(allPlayers);
             GetScores(allPlayers);
+            DisplayPlayerDetails(allPlayers);
         }
 
         private static void GetScores(List<Player> allPlayers)
@@ -47,6 +48,14 @@ namespace _23_11_2020
             foreach (Player player in players)
             {
                 Console.Write("{0,-10}",player.Score);
+            }
+        }
+        private static void DisplayPlayerDetails(List<Player> players)
+        {
+            Console.WriteLine($"{"ID"}\t{"Name"}\t{"Score"}");
+            foreach (Player player in players)
+            {
+                Console.WriteLine(player);
             }
         }
     }
