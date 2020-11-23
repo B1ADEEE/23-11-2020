@@ -30,7 +30,10 @@ namespace _23_11_2020
 
         public int CompareTo(object obj)
         {
-            throw new NotImplementedException();
+            Player objectiveThatIAmComparingTo = obj as Player;
+            int ReturnValue = this.Score.CompareTo(objectiveThatIAmComparingTo.Score);
+            return ReturnValue;
+
         }
     }
 }

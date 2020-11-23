@@ -26,6 +26,10 @@ namespace _23_11_2020
             Display(allPlayers);
             GetScores(allPlayers);
             DisplayPlayerDetails(allPlayers);
+            allPlayers.Sort();
+            allPlayers.Reverse();
+            DisplayPlayerDetails(allPlayers);
+            Console.WriteLine("The highest score is " + Player.HighScore);
         }
 
         private static void GetScores(List<Player> allPlayers)
