@@ -6,7 +6,7 @@ namespace _23_11_2020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            
         }
     }
 }
