@@ -9,6 +9,7 @@ namespace _23_11_2020
         public int ID { get; set; }
         public string PlayerName { get; set; }
         public int Score { get;private set; }
+        public static int HighScore { get; private set; }
         public Player(int id,string playername,int score)
         {
             ID = id;
@@ -21,6 +22,10 @@ namespace _23_11_2020
             {
                 Score += ValueToAdd;
             }
+        }
+        public override string ToString()
+        {
+            return $"{ID}\t{PlayerName}\t{Score}";
         }
     }
 }
