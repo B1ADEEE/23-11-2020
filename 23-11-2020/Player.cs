@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _23_11_2020
 {
-    public class Player
+    public class Player : IComparable
     {
         public int ID { get; set; }
         public string PlayerName { get; set; }
@@ -26,6 +26,11 @@ namespace _23_11_2020
         public override string ToString()
         {
             return $"{ID}\t{PlayerName}\t{Score}";
+        }
+
+        public int CompareTo(object obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
